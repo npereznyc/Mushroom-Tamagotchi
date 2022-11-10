@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tamagotchi Game</title>
+</head>
+<body>
+    <h1>Tamagotchi Game!</h1>
+    <div class="container">
+        <section id="nameInput">
+            <!-- INPUT FIELD, SUBMIT BUTTON, NAME -->
+                
+            <form id="form">
+                <input type="text" name="name" placeholder="Pick a name!" id="name">
+                <button type="submit">Submit</button> 
+                <!-- don't forget prevent default in JS! -->
+            </form>
+                <h4>Your Tamagachi's Name is:</h4>    
+                
+        </section>
+
+        <section id="startTimer">
+            <!-- START BUTTON & TIMER -->
+            <h2>Click the start button to start the game!</h2>
+            <button id="startTimer">Start</button>
+            <p>🕗 Time : <span id="timerCount">0</span></p>
+        </section>
+
+
+            
+        <section id="tamagotchi">
+            <!-- BOX, METRICS, IMAGE -->
+            <div id="metrics"></div>
+                <h3>Age ⏲ :</h3> 
+                <p id="age">0</p>
+                <h3>Hungry 🍲 :</h3>
+                <p id="hunger">0</p>
+                <h3>Sleepy 😪  :</h3>
+                <p id="sleep">0</p>
+                <h3>Bored 💤 :</h3>
+                <p id="bored">0</p>
+            <h1>😮</h1> <!--placeholder for tamagotchi image-->
+        </section>
+
+        <section id="buttons">
+            <!-- BUTTONS -->
+            <button id="feed">Feed</button>
+            <button id="lights">Lights Off</button>
+            <button id="play">Play</button>
+        </section>
+
+
+    </div>
+    
+</body>
+</html>

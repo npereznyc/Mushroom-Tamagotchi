@@ -1,0 +1,6 @@
+#tamagotchi {
+    flex: 1;
+    border: 1px solid black;
+    padding: 1em;
+    min-width: 25vw;
+  }
