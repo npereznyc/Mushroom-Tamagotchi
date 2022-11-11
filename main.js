@@ -49,8 +49,12 @@ startBtn.addEventListener('click', function() {
     timer.textContent=num; //changing the content of 'timer' to 'num', which is a placeholder in the updateTimer function(for now), for a value that will be passed into it...
 }
     interval=setInterval(()=> {
-        time+=1;
-        updateTimer(time);
+        if (hunger==3 || sleep ==3 || bored ==3) {
+            clearInterval(interval);
+        } else {
+            time+=1;
+            updateTimer(time);
+        }
     }, 1000) 
     //This interval takes the value of 'time' and increments it by 1, it then passes the new value of 'time' to the updateTimer function, updating the content of 'timer' to the incremented value. It does this every second.
 
@@ -58,17 +62,27 @@ startBtn.addEventListener('click', function() {
         startingAge.textContent=num;
     }
     interval=setInterval(()=> {
-        age+=1;
-        updateAge(age);
+        if (hunger==3 || sleep ==3 || bored ==3) {
+            clearInterval(interval);
+        } else {
+            age+=1;
+            updateAge(age);
+        }
     }, 12000)
 
     function updateHunger(num) {
         startingHunger.textContent=num;
     }
     interval=setInterval(()=> {
-        hunger+=1;
-        updateHunger(hunger);
+        if (hunger==3 || sleep ==3 || bored ==3) {
+            clearInterval(interval);
+        } else {
+            hunger+=1;
+            updateHunger(hunger);
+        }
     }, 4000)
+
+    
 
     feedBtn.addEventListener('click', function () {
         hunger-=1;
@@ -79,8 +93,12 @@ startBtn.addEventListener('click', function() {
         startingSleep.textContent=num;
     }
     interval=setInterval(()=> {
-        sleep+=1;
-        updateSleep(sleep);
+        if (hunger==3 || sleep ==3 || bored ==3) {
+            clearInterval(interval);
+        } else {
+            sleep+=1;
+            updateSleep(sleep);
+        }
     }, 6000)
 
     lightsBtn.addEventListener('click', function () {
@@ -93,8 +111,12 @@ startBtn.addEventListener('click', function() {
     }
 
     interval=setInterval(()=> {
-        bored+=1;
-        updateBored(bored);
+        if (hunger==3 || sleep ==3 || bored ==3) {
+            clearInterval(interval);
+        } else {
+            bored+=1;
+            updateBored(bored);
+        }
     }, 3000)
 
     playBtn.addEventListener('click', function () {
