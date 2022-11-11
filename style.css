@@ -1,6 +1,100 @@
+body {
+  display: flex grid;
+  flex-wrap: wrap;
+}
+
+.containers {
+  display: flex grid;
+  flex-wrap: wrap;
+}
+
+#gameTitle {
+  position: relative;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+}
+
+#nameInput {
+  display: flex block;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#nameDisplay {
+  align-self: baseline;
+}
+
+
+#startTimer{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: flex-end;
+}
 #tamagotchi {
-    flex: 1;
+    display: flex grid;
+    /* flex-direction: row; */
+    /* flex: 5; */
     border: 1px solid black;
     padding: 1em;
-    min-width: 25vw;
+    /* min-width: 25vw; */
+    flex-wrap: wrap;
+    background-color: thistle;
+  }
+
+#metrics {
+  display: flex;
+  flex: 5;
+  /* align-content: center; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.face {
+  display: flex;
+  background-color: floralwhite;
+  width: 400px;
+  height: 400px;
+  border-radius: 50px 50px 50px 50px;
+  justify-content: center;
+}
+
+.mouth {
+  position: absolute;
+  background-color: black;
+  width: 215px;
+  height: 90px;
+  border-radius: 7px 7px 100px 100px;
+  top: 560px;
+  left: 115px;
+}
+
+.eye-section {
+  width: 275px;
+  height: 100px;
+  position: absolute;
+  left: 100px;
+  top: 350px;
+}
+
+.left-eye, .right-eye {
+  background-color: blueviolet;
+  width: 52px;
+  height: 65px;
+  border-radius: 50px;
+  position: absolute;
+  top: 25px;
+
+}
+
+.right-eye {
+  right: 20px;
+}
+
+  #buttons {
+    display: flex;
+    align-items: flex-end;
   }

@@ -10,3 +10,10 @@ JS is started:
 - [x]  When any of metrics hit 10, end game
 - [x]  Create feed/sleep/play buttons
 - [x]  Set buttons to decrement the metrics when clicked
+CSS:
+- []
+- []
+- []
+- []
+- []
+- []
