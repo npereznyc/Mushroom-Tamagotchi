@@ -6,7 +6,7 @@ JS is started:
 - [x]  Start button
 - [x]  Start timer
 - [x]  Start metrics
-- [ ]  Set metrics to stop at 10
-- [ ]  When any of metrics hit 10, end game
+- [x]  Set metrics to stop at 10
+- [x]  When any of metrics hit 10, end game
 - [x]  Create feed/sleep/play buttons
 - [x]  Set buttons to decrement the metrics when clicked

@@ -17,8 +17,6 @@ form.addEventListener("submit", (event) => {
     const displayName=document.createElement('h4')
     displayName.innerHTML=inputName
     document.querySelector('#nameInput').appendChild(displayName)
-
-
 })
 
 
@@ -36,21 +34,27 @@ startBtn.addEventListener('click', function() {
     let hunger=Number(startingHunger.textContent);
     let sleep=Number(startingSleep.textContent);
     let bored=Number(startingBored.textContent);
-
     //Number() takes the number 0 from the html (a string) and converts it to a number that JS can work with.
 
     let feedBtn=document.querySelector('#feedBtn');
     let lightsBtn=document.querySelector('#lightsBtn');
     let playBtn=document.querySelector('#playBtn');
 
-    
+    function endGame () {
+        const gameOver=document.createElement('h2')
+        gameOver.innerText="Game over! Your Tamagotchi has died. Refresh the page to start again."
+        //messageSection.prepend(gameOver);
+        document.querySelector('#messageSection').appendChild(gameOver)
+    }
 
     function updateTimer(num) {
     timer.textContent=num; //changing the content of 'timer' to 'num', which is a placeholder in the updateTimer function(for now), for a value that will be passed into it...
 }
     interval=setInterval(()=> {
-        if (hunger==3 || sleep ==3 || bored ==3) {
+        if (hunger>=3 || sleep >=3 || bored >=3) {
             clearInterval(interval);
+            updateTimer(0);
+            endGame();
         } else {
             time+=1;
             updateTimer(time);
@@ -62,7 +66,7 @@ startBtn.addEventListener('click', function() {
         startingAge.textContent=num;
     }
     interval=setInterval(()=> {
-        if (hunger==3 || sleep ==3 || bored ==3) {
+        if (hunger>=3 || sleep >=3 || bored >=3) {
             clearInterval(interval);
         } else {
             age+=1;
@@ -74,15 +78,13 @@ startBtn.addEventListener('click', function() {
         startingHunger.textContent=num;
     }
     interval=setInterval(()=> {
-        if (hunger==3 || sleep ==3 || bored ==3) {
+        if (hunger>=3 || sleep >=3 || bored >=3) {
             clearInterval(interval);
         } else {
             hunger+=1;
             updateHunger(hunger);
         }
     }, 4000)
-
-    
 
     feedBtn.addEventListener('click', function () {
         hunger-=1;
@@ -93,7 +95,7 @@ startBtn.addEventListener('click', function() {
         startingSleep.textContent=num;
     }
     interval=setInterval(()=> {
-        if (hunger==3 || sleep ==3 || bored ==3) {
+        if (hunger>=3 || sleep >=3 || bored >=3) {
             clearInterval(interval);
         } else {
             sleep+=1;
@@ -111,7 +113,7 @@ startBtn.addEventListener('click', function() {
     }
 
     interval=setInterval(()=> {
-        if (hunger==3 || sleep ==3 || bored ==3) {
+        if (hunger>=3 || sleep >=3 || bored >=3) {
             clearInterval(interval);
         } else {
             bored+=1;
