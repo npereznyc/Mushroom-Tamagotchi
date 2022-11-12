@@ -24,7 +24,7 @@ nav {
 #nameInput {
   display: flex;
   flex: 1;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin-left: 100px;
   flex-wrap: wrap;
 
@@ -46,9 +46,10 @@ nav {
 
 #startTimer{
   display: flex;
-  border: 2px solid blue;
-  /*flex-wrap: wrap; */
-  /* justify-content: flex-end; */
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  flex-wrap: wrap;
+  margin-top: 20px;
   margin-right: 100px;
 }
 #tamagotchi {
