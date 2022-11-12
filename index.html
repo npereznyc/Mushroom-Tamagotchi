@@ -9,25 +9,28 @@
     <title>Tamagotchi Game</title>
 </head>
 <body>
-    <h1 id="gameTitle">Tamagotchi Game!</h1>
+    <header>
+        <h1 id="gameTitle">Tamagotchi Game!</h1>
+    </header>
+    
     <div class="container">
-        <section id="nameInput">
-            <!-- INPUT FIELD, SUBMIT BUTTON, NAME -->
-                
-            <form id="form">
-                <input type="text" name="name" placeholder="Pick a name!" id="name">
-                <button type="submit">Submit</button> 
-                <!-- don't forget prevent default in JS! -->
-            </form>
-                <h4 id="nameDisplay">Your Tamagachi's Name is:</h4>    
-                
-        </section>
+        <nav> 
+            <section id="nameInput">
+                <form id="form">
+                    <h4 id="nameDisplay"> Name Your Tamagotchi!</h4>
+                    <input type="text" name="name" placeholder="Pick a name!" id="name">
+                    <button type="submit">Submit</button> 
+                </form>
+                        
+            </section>
+        
 
-        <section id="startTimer">
+            <section id="startTimer">
             <!-- START BUTTON & TIMER -->
-            <button id="startBtn">Click Here to Start!</button>
-            <p>🕗 Time : <span id="timerCount">0</span></p>
-        </section>
+                <button id="startBtn">Click Here to Start!</button>
+                <p>🕗 Time : <span id="timerCount">0</span></p>
+            </section>
+        </nav>
 
         <section id="messageSection"></section>
 

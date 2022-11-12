@@ -10,13 +10,13 @@ form.addEventListener("submit", (event) => {
     event.preventDefault(); //prevents the page from automatically reloading every time the submit button is clicked
     const inputName=input.value; //saving the user's input as inputName
 
-    console.log(inputName)
+    event.target.reset() //resetting the input field
 
-    event.target.reset()
-
-    const displayName=document.createElement('h4')
-    displayName.innerHTML=inputName
-    document.querySelector('#nameInput').appendChild(displayName)
+    document.querySelector('#nameDisplay').innerHTML = `Click the Start button to wake ${inputName}!` 
+    // const displayName=document.createElement('h4')
+    // displayName.innerHTML=inputName
+   
+    //document.querySelector('#nameDisplay').appendChild(displayName)
 })
 
 
