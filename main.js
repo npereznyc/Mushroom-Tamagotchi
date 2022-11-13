@@ -15,13 +15,12 @@ form.addEventListener("submit", (event) => {
     document.querySelector('#nameDisplay').innerHTML = `Click the Start button to wake ${inputName}!` 
     // const displayName=document.createElement('h4')
     // displayName.innerHTML=inputName
-   
     //document.querySelector('#nameDisplay').appendChild(displayName)
 })
 
 
 //targets:
-let timer=document.querySelector('#timerCount');
+let timer=document.querySelector('#timerCount'); //timer number that will increment
 let startingAge=document.querySelector('#age');
 let startingHunger=document.querySelector('#hunger');
 let startingSleep=document.querySelector('#sleep');
