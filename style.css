@@ -4,9 +4,10 @@ body {
   align-items: center;
   padding: 0 30px 0 30px;
   background-color: azure;
+  font-family: 'Press Start 2P', cursive;
 }
 
-/* .background {
+.background {
   display: flex;
   position: fixed;
   top: -50%;
@@ -25,7 +26,7 @@ body {
   margin: auto;
   min-width: 50%;
   min-height: 50%;
-} */
+}
 
 .container {
   display: flex;
@@ -38,11 +39,14 @@ body {
 #gameTitle {
   position: relative;
   text-align: center;
+  color:rgb(255, 255, 255)
 }
 
 nav {
   display: flex;
   width: 100%;
+  background-color: rgba(0, 100, 0, 0.608);
+  color: rgb(255, 255, 255);
 }
 
 #nameInput {
@@ -56,6 +60,11 @@ nav {
   align-self: flex-start;
 }
 
+.inputform, .submit, #startBtn {
+  font-family: 'Press Start 2P', cursive;
+  height: 30px;
+}
+
 
 #startTimer{
   display: flex;
@@ -64,26 +73,18 @@ nav {
   margin-top: 20px;
   margin-right: 100px;
 }
-#tamagotchiBox {
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 3em;
-    background-color: thistle;
-    min-width: 100px;
-    min-height: 200px;
-    padding-bottom: 30px;
-  }
+
+#messageSection{
+  text-align: center;
+}
 
 #metrics {
   display: flex;
   flex: 5;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 30px 30px 10px 30px;
+  /* padding: 0 30px 10px 0; */
+  background-color: rgba(0, 100, 0, 0.608);
 }
 
 .metric-wrapper {
@@ -91,15 +92,36 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 10px;
-  font-size: larger;
-}
-
-.age, .hunger, .sleep, .bored, #age, #hunger, #sleep, #bored {
   font-size: larger;
   margin-top: 0;
   padding-right: 10px;
+  padding-left: 10px;
+  color: white;
 }
+
+#tamagotchiBox {
+    display: flex ;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 3em;
+    width: 400px;
+    height: 350px;
+    /* margin-top: 0; */
+    /* padding-bottom: 30px; */
+  }
+
+  .polka {
+    background-image: 
+      radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
+      radial-gradient(rgb(255, 255, 255) 30%, transparent 30%);
+    background-position: 0px 0px, 80px 80px;
+    background-size: 160px 160px;
+    background-color: rgb(227, 138, 138);
+  }  
+
 
 .face {
   display: flex;
@@ -108,16 +130,17 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: floralwhite;
-  width: 300px;
-  height: 300px;
-  border-radius: 74px 75px 75px 75px;
-  margin-bottom: 60px;
+  width: 290px;
+  height: 275px;
+  border-radius: 150px 150px 75px 75px;
+  top: 200px;
+  /* margin-bottom: -40px; */
 }
 
 .mouth {
   display: flex;
   position: absolute;
-  background-color: black;
+  background-color: floralwhite;
   width: 215px;
   height: 90px;
   border-radius: 7px 7px 100px 100px;
@@ -132,12 +155,12 @@ nav {
   width: 275px;
   height: 100px;
   position: absolute;
-  top: 30px; 
+  top: 100px; 
 }
 
 .left-eye, .right-eye {
   /* display: flex; */
-  background-color: blueviolet;
+  background-color: rgb(0, 0, 0);
   width: 52px;
   height: 65px;
   border-radius: 50px;
@@ -158,10 +181,11 @@ nav {
   }
 
   #feedBtn, #lightsBtn, #playBtn {
-    background-color: aqua;
+    background-color: rgb(31, 249, 6);
     height: 40px;
-    width: 100px;
+    width: 200px;
     border-radius: 15px;
-    margin: 20px;
-    font-size: larger;
+    margin: 40px 20px 0 20px;
+    /* font-size: larger; */
+    font-family: 'Press Start 2P', cursive;
   }
