@@ -50,7 +50,7 @@ startBtn.addEventListener('click', function() {
     timer.textContent=num; //changing the content of 'timer' to 'num', which is a placeholder in the updateTimer function(for now), for a value that will be passed into it...
 }
     interval=setInterval(()=> {
-        if (hunger>=3 || sleep >=3 || bored >=3) {
+        if (hunger>=10 || sleep >=10 || bored >=10) {
             clearInterval(interval);
             updateTimer(0);
             endGame();
@@ -65,25 +65,25 @@ startBtn.addEventListener('click', function() {
         startingAge.textContent=num;
     }
     interval=setInterval(()=> {
-        if (hunger>=3 || sleep >=3 || bored >=3) {
+        if (hunger>=10 || sleep >=10 || bored >=10) {
             clearInterval(interval);
         } else {
             age+=1;
             updateAge(age);
         }
-    }, 12000)
+    }, 120000)
 
     function updateHunger(num) {
         startingHunger.textContent=num;
     }
     interval=setInterval(()=> {
-        if (hunger>=3 || sleep >=3 || bored >=3) {
+        if (hunger>=10 || sleep >=10 || bored >=10) {
             clearInterval(interval);
         } else {
             hunger+=1;
             updateHunger(hunger);
         }
-    }, 4000)
+    }, 40000)
 
     feedBtn.addEventListener('click', function () {
         if (hunger >0) {
@@ -99,13 +99,13 @@ startBtn.addEventListener('click', function() {
         startingSleep.textContent=num;
     }
     interval=setInterval(()=> {
-        if (hunger>=3 || sleep >=3 || bored >=3) {
+        if (hunger>=10 || sleep >=10 || bored >=10) {
             clearInterval(interval);
         } else {
             sleep+=1;
             updateSleep(sleep);
         }
-    }, 6000)
+    }, 60000)
 
     lightsBtn.addEventListener('click', function () {
         if (sleep >0) {
@@ -121,13 +121,13 @@ startBtn.addEventListener('click', function() {
     }
 
     interval=setInterval(()=> {
-        if (hunger>=3 || sleep >=3 || bored >=3) {
+        if (hunger>=10 || sleep >=10 || bored >=10) {
             clearInterval(interval);
         } else {
             bored+=1;
             updateBored(bored);
         }
-    }, 3000)
+    }, 30000)
 
     playBtn.addEventListener('click', function () {
         if (bored >0) {
