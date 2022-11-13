@@ -38,12 +38,12 @@ startBtn.addEventListener('click', function() {
     let feedBtn=document.querySelector('#feedBtn');
     let lightsBtn=document.querySelector('#lightsBtn');
     let playBtn=document.querySelector('#playBtn');
+    const gameOver=document.createElement('h2')
 
     function endGame () {
-        const gameOver=document.createElement('h2')
         gameOver.innerText="Game over! Your Tamagotchi has died. Refresh the page to start again."
         //messageSection.prepend(gameOver);
-        document.querySelector('#messageSection').appendChild(gameOver)
+        return document.querySelector('#messageSection').appendChild(gameOver)
     }
 
     function updateTimer(num) {
