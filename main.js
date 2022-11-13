@@ -86,8 +86,13 @@ startBtn.addEventListener('click', function() {
     }, 4000)
 
     feedBtn.addEventListener('click', function () {
-        hunger-=1;
+        if (hunger >0) {
+            hunger-=1;
         updateHunger(hunger)
+        } else {
+            hunger=0;
+        }
+        
     })
 
     function updateSleep(num) {
@@ -103,8 +108,12 @@ startBtn.addEventListener('click', function() {
     }, 6000)
 
     lightsBtn.addEventListener('click', function () {
-        sleep-=1;
-        updateSleep(sleep)
+        if (sleep >0) {
+            sleep-=1;
+            updateSleep(sleep);
+        } else {
+            sleep=0;
+        }
     })
 
     function updateBored(num) {
@@ -121,8 +130,13 @@ startBtn.addEventListener('click', function() {
     }, 3000)
 
     playBtn.addEventListener('click', function () {
-        bored-=1;
-        updateBored(bored)
+        if (bored >0) {
+            bored-=1;
+            updateBored(bored);
+        } else {
+            bored=0;
+        }
+        
     })
 
     startTimer.disabled=true;
