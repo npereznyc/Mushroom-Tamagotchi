@@ -71,7 +71,7 @@ startBtn.addEventListener('click', function() {
             age+=1;
             updateAge(age);
         }
-    }, 120000)
+    }, 60000)
 
     function updateHunger(num) {
         startingHunger.textContent=num;
