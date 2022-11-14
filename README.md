@@ -2,6 +2,8 @@
 
 A Tamogatchi Mushroom game, where the user is tasked with keeping their tamogatchi mushroom alive by regularly feeding it, putting it to sleep, and playing with it. Technologies used are HTML, CSS, and JavaScript. Unsolved problems: getting the timer to show minutes and seconds, rather than just continuing to increment in seconds.
 
+I also definitely didn't commit as often as I should have. 
+
 User Story:
 When I load the page, I see an image of my tamagotchi mushroom in the middle of the screen.
 

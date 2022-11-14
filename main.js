@@ -83,7 +83,7 @@ startBtn.addEventListener('click', function() {
             hunger+=1;
             updateHunger(hunger);
         }
-    }, 40000)
+    }, 20000)
 
     feedBtn.addEventListener('click', function () {
         if (hunger >0) {
@@ -105,7 +105,7 @@ startBtn.addEventListener('click', function() {
             sleep+=1;
             updateSleep(sleep);
         }
-    }, 60000)
+    }, 30000)
 
     lightsBtn.addEventListener('click', function () {
         if (sleep >0) {
@@ -127,7 +127,7 @@ startBtn.addEventListener('click', function() {
             bored+=1;
             updateBored(bored);
         }
-    }, 30000)
+    }, 10000)
 
     playBtn.addEventListener('click', function () {
         if (bored >0) {
